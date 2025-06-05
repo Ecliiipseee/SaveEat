@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>SaveEat - Accueil</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="header-nav">
+    <div class="header-left">
+      <h1>SaveEat</h1>
+    </div>
+    <img src="images/Logo_SaveEat.png" alt="Logo SaveEat" class="header-logo">
+  </header>  
+
+  <main class="accueil">
+    <div style="text-align: center; padding: 20px 0 10px;">
+      <h2 class="welcome">Bienvenue sur SaveEat</h2>
+      <p class="welcome">Réduisez le gaspillage alimentaire et faites des économies !</p>
+    </div>
+
+    <div class="menu-grille">
+      <div class="item">
+        <a href="promotions.html" class="carte-img">
+          <img src="images/promotion.png" alt="Promotions" />
+        </a>
+        <p class="label" style="margin-top: 10px; text-align: center;">Promotions</p>
+      </div>
+      <div class="item">
+        <a href="recettes.html" class="carte-img">
+          <img src="images/recettes.png" alt="Recettes" />
+        </a>
+        <p class="label" style="margin-top: 10px; text-align: center;">Recettes</p>
+      </div>
+      <div class="item">
+        <a href="panier.html" class="carte-img">
+          <img src="images/panier.png" alt="Panier" />
+        </a>
+        <p class="label" style="margin-top: 10px; text-align: center;">Panier</p>
+      </div>
+      <div class="item">
+        <a href="frigo.html" class="carte-img">
+          <img src="images/frigo.png" alt="Frigo" />
+        </a>
+        <p class="label" style="margin-top: 10px; text-align: center;">Frigo</p>
+      </div>
+      <div class="item">
+        <a href="economies.html" class="carte-img">
+          <img src="images/euro.png" alt="Économies" />
+        </a>
+        <p class="label" style="margin-top: 10px; text-align: center;">Économies</p>
+      </div>
+      <div class="item">
+        <a href="compte.html" class="carte-img">
+          <img src="images/utilisateur.png" alt="Mon compte" />
+        </a>
+        <p class="label" style="margin-top: 10px; text-align: center;">Mon compte</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="logout-container">
+    <button id="logoutBtn" class="btn-secondary" style="display: none;">Déconnexion</button>
+  </div>
+  
+  <footer>
+    <p>&copy; 2025 SaveEat</p>
+  </footer>
+  
+  <div id="toast" class="toast"></div>
+</body>
+</html>

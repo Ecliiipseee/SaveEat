@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Promotions</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="header-nav">
+    <div class="header-left">
+      <h1>Promotions</h1>
+      <nav>
+        <div class="nav-links">
+          <a href="index.html">Accueil</a>
+          <a href="promotions.html">Promotions</a>
+          <a href="recettes.html">Recettes</a>
+          <a href="panier.html">Panier</a>
+          <a href="frigo.html">Frigo</a>
+          <a href="economies.html">Économies</a>
+          <a href="compte.html">Mon compte</a>
+        </div>
+      </nav>
+    </div>
+    <img src="images/Logo_SaveEat.png" alt="Logo SaveEat" class="header-logo">
+  </header> 
+  <main>
+    <div class="filter-options" style="display: flex; justify-content: center; gap: 20px; margin-bottom: 30px;">
+      <div class="filter-group">
+        <label for="categoryFilter">Catégorie :</label>
+        <select id="categoryFilter" onchange="filterProducts()" class="filter-select">
+          <option value="Toutes">Toutes</option>
+        </select>
+      </div>
+      
+      <div class="filter-group">
+        <label for="sortName">Trier par nom :</label>
+        <select id="sortName" onchange="sortByName()" class="filter-select">
+          <option value="default">-</option>
+          <option value="asc">A-Z</option>
+          <option value="desc">Z-A</option>
+        </select>
+      </div>
+      
+      <div class="filter-group">
+        <label for="sortPrice">Trier par prix :</label>
+        <select id="sortPrice" onchange="sortByPrice()" class="filter-select">
+          <option value="default">-</option>
+          <option value="asc">Croissant</option>
+          <option value="desc">Décroissant</option>
+        </select>
+      </div>
+    </div>
+    
+    <div id="listePromotions" class="grid-produits"></div>
+  </main>
+  <div class="logout-container">
+    <button onclick="logout()" class="btn-secondary">Déconnexion</button>
+  </div>
+  
+  <div id="toast" class="toast"></div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Économies</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="header-nav">
+    <div class="header-left">
+      <h1>Économies</h1>
+      <nav>
+        <div class="nav-links">
+          <a href="index.html">Accueil</a>
+          <a href="promotions.html">Promotions</a>
+          <a href="recettes.html">Recettes</a>
+          <a href="panier.html">Panier</a>
+          <a href="frigo.html">Frigo</a>
+          <a href="economies.html">Économies</a>
+          <a href="compte.html">Mon compte</a>
+        </div>
+      </nav>
+    </div>
+    <img src="images/Logo_SaveEat.png" alt="Logo SaveEat" class="header-logo">
+  </header> 
+  <main>
+    <div class="charts-container">
+      <div class="economies-chart-donut">
+        <canvas id="graphEconomiesDonut"></canvas>
+      </div>
+      
+      <div class="economies-chart-bar">
+        <canvas id="graphEconomiesMonthly"></canvas>
+      </div>
+    </div>
+
+    <div id="statistiques" class="statistiques single-line" style="justify-content: center; margin-bottom: 20px;"></div>
+    
+    <div style="text-align: center; margin-bottom: 2rem;">
+      <button onclick="resetEconomies()" class="btn-secondary">Réinitialiser</button>
+    </div>
+  </main>
+  <div class="logout-container">
+    <button onclick="logout()" class="btn-secondary">Déconnexion</button>
+  </div>
+  
+  <div id="toast" class="toast"></div>
+</body>
+</html>
