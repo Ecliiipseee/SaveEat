@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Espace Entreprise - Accueil</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="header-nav">
+    <div class="header-left">
+      <h1>Espace Entreprise - Accueil</h1>
+    </div>
+    <img src="images/Logo_SaveEat.png" alt="Logo" class="header-logo">
+  </header>
+  <main class="accueil" style="text-align: center; margin-top: 50px;">
+    <!-- Modification ici : grille sur 1 colonne centrée -->
+    <div class="menu-grille" style="grid-template-columns: 1fr; max-width: 300px; margin: 0 auto;">
+      <div class="item">
+        <a href="entreprise.html" class="carte-img">
+          <img src="images/fruit.png" alt="Produits" />
+        </a>
+        <p class="label">Ajouter des promotions</p>
+      </div>
+    </div>
+  </main>
+  <div class="logout-container">
+    <button onclick="logout()" class="btn-secondary">Déconnexion</button>
+  </div>
+  
+  <div id="toast" class="toast"></div>
+</body>
+</html>

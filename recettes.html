@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Recettes</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="header-nav">
+    <div class="header-left">
+      <h1>Recettes</h1>
+      <nav>
+        <div class="nav-links">
+          <a href="index.html">Accueil</a>
+          <a href="promotions.html">Promotions</a>
+          <a href="recettes.html">Recettes</a>
+          <a href="panier.html">Panier</a>
+          <a href="frigo.html">Frigo</a>
+          <a href="economies.html">Économies</a>
+          <a href="compte.html">Mon compte</a>
+        </div>
+      </nav>
+    </div>
+    <img src="images/Logo_SaveEat.png" alt="Logo SaveEat" class="header-logo">
+  </header> 
+  <main>
+    <div id="listeRecettes">
+      <h2>Recettes disponibles</h2>
+      <div id="recettesDisponibles" class="grid-produits"></div>
+      
+      <h2>Recettes indisponibles</h2>
+      <div id="recettesIndisponibles" class="grid-produits"></div>
+    </div>
+  </main>
+  <div class="logout-container">
+    <button onclick="logout()" class="btn-secondary">Déconnexion</button>
+  </div>
+  
+  <div id="toast" class="toast"></div>
+</body>
+</html>
